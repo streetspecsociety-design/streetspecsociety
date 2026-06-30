@@ -1,24 +1,30 @@
+import Link from "next/link";
+
 export default function Gallery() {
   const categories = [
     {
       title: "Featured Builds",
       description: "Showcasing some of the cleanest builds in Street Spec Society.",
       image: "/logo.png",
+      href: "/gallery/featured",
     },
     {
       title: "Team Meets",
       description: "Photos from our monthly meets and community events.",
       image: "/logo.png",
+      href: "/gallery/meets",
     },
     {
       title: "Night Shoots",
       description: "Vegas nights with the Street Spec Society family.",
       image: "/logo.png",
+      href: "/gallery/night-shoots",
     },
     {
       title: "Rollers",
       description: "Rolling shots captured around Las Vegas.",
       image: "/logo.png",
+      href: "/gallery/rollers",
     },
   ];
 
@@ -53,16 +59,16 @@ export default function Gallery() {
       <section className="max-w-7xl mx-auto py-20 px-8">
         <div className="grid md:grid-cols-2 gap-10">
           {categories.map((category) => (
-            <a
+            <Link
               key={category.title}
-              href="#"
-              className="group rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 hover:border-white/30 transition"
+              href={category.href}
+              className="group rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 transition-all duration-300 hover:-translate-y-2 hover:border-red-600 hover:shadow-[0_0_35px_rgba(220,38,38,0.45)]"
             >
               <div className="overflow-hidden">
                 <img
                   src={category.image}
                   alt={category.title}
-                  className="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
+                  className="w-full h-80 object-cover transition duration-700 group-hover:scale-110"
                 />
               </div>
 
@@ -75,11 +81,11 @@ export default function Gallery() {
                   {category.description}
                 </p>
 
-                <div className="mt-6 uppercase tracking-widest text-sm text-white">
+                <div className="mt-6 uppercase tracking-widest text-sm text-red-500 group-hover:text-white transition">
                   View Gallery →
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
