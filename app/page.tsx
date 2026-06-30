@@ -129,9 +129,9 @@ export default function Home() {
             </div>
 
             <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
-              <img src="/frosty-car.jpg" alt="Frosty's Build" className="w-full h-72 object-cover" />
+              <img src="/frosty-bike.jpeg" alt="Frosty's Build" className="w-full h-72 object-cover" />
               <div className="p-6">
-                <h3 className="text-2xl font-bold">Member Build #7</h3>
+                <h3 className="text-2xl font-bold">2018 Ninja400</h3>
                 <p className="mt-2 text-gray-400">Owner: Frosty</p>
                 <p className="text-gray-500">Las Vegas, Nevada</p>
               </div>
@@ -194,7 +194,7 @@ export default function Home() {
             <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
               <img src="/dre-civic.jpeg" alt="Dre's Build" className="w-full h-72 object-cover" />
               <div className="p-6">
-                <h3 className="text-2xl font-bold">2024 Honda Civic Sport</h3>
+                <h3 className="text-2xl font-bold">2025 Honda Civic Sport</h3>
                 <p className="mt-2 text-gray-400">Owner: Dre</p>
                 <p className="text-gray-500">Las Vegas, Nevada</p>
               </div>
@@ -239,7 +239,7 @@ export default function Home() {
             <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
               <img src="/jay-lexus.jpeg" alt="Jay's Build" className="w-full h-72 object-cover" />
               <div className="p-6">
-                <h3 className="text-2xl font-bold">Lexus</h3>
+                <h3 className="text-2xl font-bold">1992 LexusLS400</h3>
                 <p className="mt-2 text-gray-400">Owner: Jay</p>
                 <p className="text-gray-500">Las Vegas, Nevada</p>
               </div>
@@ -257,7 +257,7 @@ export default function Home() {
             <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
               <img src="/midnight-toyota.jpeg" alt="Midnight's Build" className="w-full h-72 object-cover" />
               <div className="p-6">
-                <h3 className="text-2xl font-bold">Toyota Camry</h3>
+                <h3 className="text-2xl font-bold">2015 Toyota Camry</h3>
                 <p className="mt-2 text-gray-400">Owner: Midnight</p>
                 <p className="text-gray-500">Las Vegas, Nevada</p>
               </div>
@@ -273,7 +273,7 @@ export default function Home() {
             </div>
 
             <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
-              <img src="/vanessa-wrx.jpeg" alt="Vanessa's Build" className="w-full h-72 object-cover" />
+              <img src="/vanessa-wrxy.jpeg" alt="Vanessa's Build" className="w-full h-72 object-cover" />
               <div className="p-6">
                 <h3 className="text-2xl font-bold">2024 WRX Premium</h3>
                 <p className="mt-2 text-gray-400">Owner: Vanessa</p>
