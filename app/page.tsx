@@ -281,6 +281,65 @@ export default function Home() {
               </div>
             </div>
 
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
+              <img src="/sergio-car.jpeg" alt="Sergio's Build" className="w-full h-72 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">2009 BMW 135I</h3>
+                <p className="mt-2 text-gray-400">Owner: Sergio</p>
+                <p className="text-gray-500">Las Vegas, Nevada</p>
+              </div>
+            </div>
+
+
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
+              <img src="/member2.jpeg" alt="Member 2" className="w-full h-72 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">Featured Build Coming Soon!</h3>
+                <p className="mt-2 text-gray-400">Owner: Coming Soon</p>
+                <p className="text-gray-500">Las Vegas, Nevada</p>
+              </div>
+            </div>
+
+
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
+              <img src="/member3.jpeg" alt="Member 3" className="w-full h-72 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">Featured Build Coming Soon</h3>
+                <p className="mt-2 text-gray-400">Owner: Coming Soon</p>
+                <p className="text-gray-500">Las Vegas, Nevada</p>
+              </div>
+            </div>
+
+
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
+              <img src="/member4.jpeg" alt="Member 4" className="w-full h-72 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">Featured Build Coming Soon</h3>
+                <p className="mt-2 text-gray-400">Owner: Coming Soon</p>
+                <p className="text-gray-500">Las Vegas, Nevada</p>
+              </div>
+            </div>
+
+
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
+              <img src="/member5.jpeg" alt="Member 5" className="w-full h-72 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">Featured Build Coming Soon</h3>
+                <p className="mt-2 text-gray-400">Owner: Coming Soon</p>
+                <p className="text-gray-500">Las Vegas, Nevada</p>
+              </div>
+            </div>
+
+
+            <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
+              <img src="/member6.jpeg" alt="Member 6" className="w-full h-72 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">Featured Build Coming Soon</h3>
+                <p className="mt-2 text-gray-400">Owner: Coming Soon</p>
+                <p className="text-gray-500">Las Vegas, Nevada</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
