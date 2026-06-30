@@ -3,22 +3,22 @@ export default function Gallery() {
     {
       title: "Featured Builds",
       description: "Showcasing some of the cleanest builds in Street Spec Society.",
-      image: "/jc-civic.jpeg",
+      image: "/logo.png",
     },
     {
       title: "Team Meets",
       description: "Photos from our monthly meets and community events.",
-      image: "/grems-civic.jpeg",
+      image: "/logo.png",
     },
     {
       title: "Night Shoots",
       description: "Vegas nights with the Street Spec Society family.",
-      image: "/jay-civic.jpeg",
+      image: "/logo.png",
     },
     {
       title: "Rollers",
       description: "Rolling shots captured around Las Vegas.",
-      image: "/joncarlo-civic.jpeg",
+      image: "/logo.png",
     },
   ];
 
