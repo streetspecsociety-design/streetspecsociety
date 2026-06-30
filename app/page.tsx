@@ -203,7 +203,7 @@ export default function Home() {
             <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
               <img src="/casper-car.jpeg" alt="Casper's Build" className="w-full h-72 object-cover" />
               <div className="p-6">
-                <h3 className="text-2xl font-bold">2010 XYZ</h3>
+                <h3 className="text-2xl font-bold">2017 Nissan 370z</h3>
                 <p className="mt-2 text-gray-400">Owner: Casper</p>
                 <p className="text-gray-500">Las Vegas, Nevada</p>
               </div>
