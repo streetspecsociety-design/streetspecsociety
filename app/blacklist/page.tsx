@@ -4,43 +4,22 @@ import Link from "next/link";
 import Image from "next/image";
 
 const members = [
-  {
-    name: "Chinkz",
-    instagram: "@cutzbychinkz",
-  },
-  {
-    name: "Brandon",
-    instagram: "@lv.civic.hatch_1.5",
-  },
-  {
-    name: "Zi",
-    instagram: "@sheluvvzi",
-  },
-  {
-    name: "Arlen",
-    instagram: "@702.lvparadise",
-  },
-  {
-    name: "Ari",
-    instagram: "@asapari25",
-  },
-  {
-    name: "Cam",
-    instagram: "@f56_grandma",
-  },
+  { name: "Chinkz", instagram: "@cutzbychinkz" },
+  { name: "Brandon", instagram: "@lv.civic.hatch_1.5" },
+  { name: "Zi", instagram: "@sheluvvzi" },
+  { name: "Arlen", instagram: "@702.lvparadise" },
+  { name: "Ari", instagram: "@asapari25" },
+  { name: "Cam", instagram: "@f56_grandma" },
 ];
 
 export default function BlacklistPage() {
   return (
     <main className="min-h-screen bg-black text-white">
-
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-red-900">
-
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/20 to-black" />
 
         <div className="relative max-w-6xl mx-auto px-6 py-24 text-center">
-
           <Image
             src="/logo.png"
             alt="Street Spec Society"
@@ -58,8 +37,8 @@ export default function BlacklistPage() {
           <p className="max-w-3xl mx-auto text-gray-400 text-lg leading-8">
             This page identifies individuals who are no longer affiliated with
             Street Spec Society and are not authorized to represent the
-            organization, attend members-only events, or use Street Spec Society
-            branding as active members.
+            organization, attend members-only events, or represent the team as
+            active members.
           </p>
 
           <Link
@@ -68,48 +47,33 @@ export default function BlacklistPage() {
           >
             ← Return Home
           </Link>
-
         </div>
-
       </section>
 
-      {/* Member Cards */}
-
+      {/* Cards */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
           {members.map((member) => (
-
             <div
               key={member.name}
-              className="group overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900 transition-all duration-300 hover:-translate-y-2 hover:border-red-600 hover:shadow-[0_0_40px_rgba(220,38,38,.35)]"
+              className="group rounded-3xl border border-zinc-800 bg-zinc-900 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-red-600 hover:shadow-[0_0_40px_rgba(220,38,38,.35)]"
             >
-
               <div className="h-2 bg-gradient-to-r from-red-700 via-red-500 to-red-700" />
 
-              <div className="p-8">
-
-                <div className="flex items-center justify-between">
-
-                  {/* Larger Logo */}
-                  <div className="h-24 w-24 overflow-hidden rounded-full border-2 border-red-600 bg-black flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,.35)]">
-
-                    <Image
-                      src="/logo.png"
-                      alt="Street Spec Society"
-                      width={90}
-                      height={90}
-                      className="scale-125"
-                    />
-
-                  </div>
-
-                  <span className="rounded-full bg-red-600 px-4 py-2 text-xs font-bold uppercase tracking-widest text-white shadow-lg">
-                    Membership Revoked
-                  </span>
-
+              <div className="p-8 text-center">
+                {/* Large Centered Logo */}
+                <div className="relative mx-auto h-32 w-32 rounded-full border-2 border-red-600 bg-black shadow-[0_0_30px_rgba(220,38,38,.35)] overflow-hidden">
+                  <Image
+                    src="/logo.png"
+                    alt="Street Spec Society"
+                    fill
+                    className="object-contain p-2"
+                  />
                 </div>
+
+                <span className="inline-block mt-6 rounded-full bg-red-600 px-6 py-3 text-xs font-bold uppercase tracking-widest text-white shadow-lg">
+                  Membership Revoked
+                </span>
 
                 <h2 className="mt-8 text-3xl font-black">
                   {member.name}
@@ -120,7 +84,10 @@ export default function BlacklistPage() {
                 </p>
 
                 <a
-                  href={`https://instagram.com/${member.instagram.replace("@", "")}`}
+                  href={`https://instagram.com/${member.instagram.replace(
+                    "@",
+                    ""
+                  )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 block text-lg font-semibold text-red-400 hover:text-red-300 transition"
@@ -128,8 +95,7 @@ export default function BlacklistPage() {
                   {member.instagram}
                 </a>
 
-                <div className="mt-6 border-t border-zinc-800 pt-5">
-
+                <div className="mt-8 border-t border-zinc-800 pt-6">
                   <p className="uppercase tracking-widest text-xs text-gray-500">
                     Status
                   </p>
@@ -137,25 +103,16 @@ export default function BlacklistPage() {
                   <p className="mt-2 font-semibold text-red-500">
                     No Longer Affiliated with Street Spec Society
                   </p>
-
                 </div>
-
               </div>
-
             </div>
-
           ))}
-
         </div>
-
       </section>
 
       {/* Footer */}
-
       <section className="border-t border-zinc-800">
-
         <div className="max-w-5xl mx-auto px-6 py-14 text-center">
-
           <Image
             src="/logo.png"
             alt="Street Spec Society"
@@ -173,11 +130,8 @@ export default function BlacklistPage() {
             Street Spec Society. Individuals listed above are not recognized as
             active members or representatives of the organization.
           </p>
-
         </div>
-
       </section>
-
     </main>
   );
 }
