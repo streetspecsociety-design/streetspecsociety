@@ -9,7 +9,7 @@ const merch = [
   },
   {
     image: "/merch/hoodie.png",
-    title: "Street Spec Society Hoodie",
+    title: "Street Spec Society Sweater",
     description:
       "Heavyweight hoodie designed for meets, cruises and cool Vegas nights.",
   },
