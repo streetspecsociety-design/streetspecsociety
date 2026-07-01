@@ -13,8 +13,9 @@ const links = [
   { href: "/rules", label: "Rules" },
   { href: "/awards", label: "Awards" },
   { href: "/leadership", label: "Leadership" },
-  { href: "/merch", label: "Merch" }, // NEW
+  { href: "/merch", label: "Merch" },
   { href: "/blacklist", label: "Blacklist" },
+  { href: "/faq", label: "FAQ" }, // NEW
   { href: "/contact", label: "Contact" },
 ];
 
