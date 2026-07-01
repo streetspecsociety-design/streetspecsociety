@@ -62,15 +62,19 @@ export default function BlacklistPage() {
 
               <div className="p-8 text-center">
 
-                {/* Centered Logo */}
-                <div className="relative mx-auto flex h-32 w-32 items-center justify-center overflow-hidden rounded-full border-2 border-red-600 bg-black shadow-[0_0_30px_rgba(220,38,38,.35)]">
+                {/* Larger Centered Logo */}
+                <div className="relative mx-auto h-32 w-32 overflow-hidden rounded-full border-2 border-red-600 bg-black shadow-[0_0_30px_rgba(220,38,38,.35)]">
 
                   <Image
                     src="/logo.png"
                     alt="Street Spec Society"
                     fill
                     priority
-                    className="object-contain object-center p-4"
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "center",
+                      transform: "scale(1.75)",
+                    }}
                   />
 
                 </div>
