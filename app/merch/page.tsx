@@ -11,7 +11,7 @@ const merch = [
     image: "/merch/hoodie.png",
     title: "Street Spec Society Sweater",
     description:
-      "Heavyweight hoodie designed for meets, cruises and cool Vegas nights.",
+      "Heavyweight hoodie designed for meets, cruises, and cool Vegas nights.",
   },
   {
     image: "/merch/jacket.png",
@@ -23,7 +23,7 @@ const merch = [
     image: "/merch/hat-beanie.png",
     title: "Snapback & Beanie",
     description:
-      "Finish the look with official Street Spec Society headwear.",
+      "Complete your look with official Street Spec Society headwear.",
   },
 ];
 
@@ -39,8 +39,8 @@ export default function MerchPage() {
         </h1>
 
         <p className="max-w-3xl mx-auto mt-6 text-gray-400 text-lg">
-          Official Street Spec Society apparel designed for members who
-          represent the culture both on and off the road.
+          Official Street Spec Society apparel designed exclusively for active
+          members who proudly represent the team on and off the road.
         </p>
 
         <Link
@@ -53,10 +53,9 @@ export default function MerchPage() {
       </section>
 
       {/* Products */}
-
       <section className="max-w-7xl mx-auto py-20 px-6">
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid gap-10 md:grid-cols-2">
 
           {merch.map((item) => (
 
@@ -74,7 +73,7 @@ export default function MerchPage() {
                 />
 
                 <div className="absolute top-4 right-4 rounded-full bg-red-600 px-4 py-2 text-xs font-bold uppercase tracking-widest text-white shadow-lg">
-                  Coming Soon
+                  Members Only
                 </div>
 
               </div>
@@ -91,9 +90,9 @@ export default function MerchPage() {
 
                 <button
                   disabled
-                  className="mt-8 w-full rounded-xl border border-red-600 bg-black py-3 font-bold uppercase tracking-[0.25em] text-red-500 transition duration-300 hover:bg-red-600 hover:text-white"
+                  className="mt-8 w-full cursor-default rounded-xl border border-red-600 bg-black py-3 font-bold uppercase tracking-[0.25em] text-red-500"
                 >
-                  Coming Soon
+                  🔒 Active Members Only
                 </button>
 
               </div>
@@ -106,8 +105,7 @@ export default function MerchPage() {
 
       </section>
 
-      {/* Lifestyle Section */}
-
+      {/* Information */}
       <section className="border-t border-zinc-800 py-24">
 
         <div className="max-w-5xl mx-auto px-6 text-center">
@@ -116,12 +114,32 @@ export default function MerchPage() {
             Represent the Society
           </h2>
 
-          <p className="mt-6 text-lg text-gray-400">
-            Street Spec Society isn't just a car club—it's a community.
-            Our merchandise is designed for meets, cruises, charity events,
-            and everyday wear. More lifestyle photos featuring our members
-            will be coming soon.
+          <p className="mt-6 text-lg leading-8 text-gray-400">
+            Official Street Spec Society merchandise is reserved exclusively for
+            active members in good standing. Our apparel represents the values,
+            dedication, and community that define Street Spec Society both on
+            and off the road.
           </p>
+
+          <div className="mt-10 inline-block rounded-2xl border border-red-600 bg-red-600/10 px-8 py-5">
+
+            <h3 className="text-2xl font-bold text-red-500">
+              Want Official Merch?
+            </h3>
+
+            <p className="mt-3 text-gray-300">
+              Become an active member of Street Spec Society to gain access to
+              exclusive apparel, merchandise, events, and member benefits.
+            </p>
+
+            <Link
+              href="/join"
+              className="mt-6 inline-block rounded-full bg-red-600 px-8 py-3 font-bold transition hover:bg-red-700"
+            >
+              Apply to Join →
+            </Link>
+
+          </div>
 
         </div>
 
