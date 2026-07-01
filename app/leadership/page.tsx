@@ -46,7 +46,7 @@ export default function LeadershipPage() {
         <div className="relative max-w-6xl mx-auto px-6 py-24 text-center">
 
           <Image
-            src="/logo.png"
+            src="/SSLV_transparent_square.png"
             alt="Street Spec Society"
             width={130}
             height={130}
@@ -76,7 +76,6 @@ export default function LeadershipPage() {
       </section>
 
       {/* Leadership Cards */}
-
       <section className="max-w-7xl mx-auto px-6 py-20">
 
         <div className="grid gap-8 md:grid-cols-2">
@@ -94,13 +93,17 @@ export default function LeadershipPage() {
 
                 <div className="flex items-center justify-between">
 
-                  <div className="h-16 w-16 overflow-hidden rounded-full border-2 border-red-600 bg-black p-2">
+                  {/* Updated Logo */}
+                  <div className="relative h-16 w-16 overflow-hidden rounded-full border-2 border-red-600 bg-black flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,.35)]">
+
                     <Image
-                      src="/logo.png"
+                      src="/SSLV_transparent_square.png"
                       alt="Street Spec Society"
-                      width={64}
-                      height={64}
+                      fill
+                      priority
+                      className="object-contain object-center scale-110"
                     />
+
                   </div>
 
                   <span className="rounded-full bg-red-600 px-4 py-2 text-xs font-bold uppercase tracking-widest text-white">
@@ -118,7 +121,7 @@ export default function LeadershipPage() {
                 </p>
 
                 <a
-                  href={`https://instagram.com/${leader.instagram.replace("@","")}`}
+                  href={`https://instagram.com/${leader.instagram.replace("@", "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 block text-lg font-semibold text-red-400 hover:text-red-300"
@@ -149,13 +152,12 @@ export default function LeadershipPage() {
       </section>
 
       {/* Footer */}
-
       <section className="border-t border-zinc-800">
 
         <div className="max-w-4xl mx-auto px-6 py-16 text-center">
 
           <Image
-            src="/logo.png"
+            src="/SSLV_transparent_square.png"
             alt="Street Spec Society"
             width={70}
             height={70}
