@@ -12,7 +12,8 @@ const links = [
   { href: "/join", label: "Join" },
   { href: "/rules", label: "Rules" },
   { href: "/awards", label: "Awards" },
-  { href: "/leadership", label: "Leadership" }, // NEW
+  { href: "/leadership", label: "Leadership" },
+  { href: "/merch", label: "Merch" }, // NEW
   { href: "/blacklist", label: "Blacklist" },
   { href: "/contact", label: "Contact" },
 ];
