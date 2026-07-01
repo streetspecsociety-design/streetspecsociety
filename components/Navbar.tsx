@@ -12,6 +12,7 @@ const links = [
   { href: "/join", label: "Join" },
   { href: "/rules", label: "Rules" },
   { href: "/awards", label: "Awards" },
+  { href: "/blacklist", label: "Blacklist" }, // NEW
   { href: "/contact", label: "Contact" },
 ];
 
@@ -48,7 +49,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`transition ${
+              className={`transition duration-300 ${
                 pathname === link.href
                   ? "text-red-500 font-bold"
                   : "text-white hover:text-red-500"
