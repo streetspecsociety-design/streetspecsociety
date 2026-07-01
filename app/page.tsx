@@ -237,10 +237,10 @@ export default function Home() {
             </div>
 
             <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
-              <img src="/jay-lexus.jpeg" alt="Jay's Build" className="w-full h-72 object-cover" />
+              <img src="/jay-lexus1.jpeg" alt="Jay's Build" className="w-full h-72 object-cover" />
               <div className="p-6">
                 <h3 className="text-2xl font-bold">1992 Lexus LS400</h3>
-                <p className="mt-2 text-gray-400">Owner: Jay</p>
+                <p className="mt-2 text-gray-400">Owner: JJ</p>
                 <p className="text-gray-500">Las Vegas, Nevada</p>
               </div>
             </div>
@@ -302,10 +302,10 @@ export default function Home() {
 
 
             <div className="bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:scale-105 transition duration-300">
-              <img src="/member3.jpeg" alt="Member 3" className="w-full h-72 object-cover" />
+              <img src="/AK-car.jpeg" alt="Member 3" className="w-full h-72 object-cover" />
               <div className="p-6">
-                <h3 className="text-2xl font-bold">Featured Build Coming Soon</h3>
-                <p className="mt-2 text-gray-400">Owner: Coming Soon</p>
+                <h3 className="text-2xl font-bold">2005 Buick Century Custom</h3>
+                <p className="mt-2 text-gray-400">Owner: AKWonder</p>
                 <p className="text-gray-500">Las Vegas, Nevada</p>
               </div>
             </div>
