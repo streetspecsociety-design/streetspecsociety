@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
@@ -22,6 +24,13 @@ export default function ContactPage() {
           <p className="text-gray-300 mt-4 max-w-xl text-center px-6">
             Questions about the team? Interested in joining? We'd love to hear from you.
           </p>
+
+          <Link
+            href="/"
+            className="inline-block mt-10 rounded-full bg-red-600 px-8 py-3 font-bold transition hover:bg-red-700"
+          >
+            ← Back Home
+          </Link>
 
         </div>
       </section>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function JoinPage() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
@@ -22,6 +24,14 @@ export default function JoinPage() {
             Become part of one of Las Vegas' fastest growing automotive
             communities.
           </p>
+
+          <Link
+            href="/"
+            className="inline-block mt-8 rounded-full bg-red-600 px-8 py-3 font-bold transition hover:bg-red-700"
+          >
+            ← Back Home
+          </Link>
+
         </div>
       </section>
 

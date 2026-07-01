@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Events() {
   const events = [
     {
@@ -52,6 +54,14 @@ export default function Events() {
           <p className="text-gray-300 max-w-2xl mx-auto">
             Stay up to date with upcoming meets, cruises, and community events.
           </p>
+
+          <Link
+            href="/"
+            className="inline-block mt-8 rounded-full bg-red-600 px-8 py-3 font-bold transition hover:bg-red-700"
+          >
+            ← Back Home
+          </Link>
+
         </div>
       </section>
 
@@ -68,7 +78,7 @@ export default function Events() {
           {events.map((event) => (
             <div
               key={event.title}
-              className="bg-zinc-900 border border-white/10 rounded-3xl p-8 hover:border-white/30 transition"
+              className="bg-zinc-900 border border-white/10 rounded-3xl p-8 hover:border-red-600 transition duration-300 hover:shadow-[0_0_25px_rgba(220,38,38,0.25)]"
             >
               <h3 className="text-3xl font-bold">
                 {event.title}
