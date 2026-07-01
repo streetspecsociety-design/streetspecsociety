@@ -61,14 +61,18 @@ export default function BlacklistPage() {
               <div className="h-2 bg-gradient-to-r from-red-700 via-red-500 to-red-700" />
 
               <div className="p-8 text-center">
-                {/* Large Centered Logo */}
-                <div className="relative mx-auto h-32 w-32 rounded-full border-2 border-red-600 bg-black shadow-[0_0_30px_rgba(220,38,38,.35)] overflow-hidden">
+
+                {/* Centered Logo */}
+                <div className="relative mx-auto flex h-32 w-32 items-center justify-center overflow-hidden rounded-full border-2 border-red-600 bg-black shadow-[0_0_30px_rgba(220,38,38,.35)]">
+
                   <Image
                     src="/logo.png"
                     alt="Street Spec Society"
                     fill
-                    className="object-contain p-2"
+                    priority
+                    className="object-contain object-center p-4"
                   />
+
                 </div>
 
                 <span className="inline-block mt-6 rounded-full bg-red-600 px-6 py-3 text-xs font-bold uppercase tracking-widest text-white shadow-lg">
@@ -84,10 +88,7 @@ export default function BlacklistPage() {
                 </p>
 
                 <a
-                  href={`https://instagram.com/${member.instagram.replace(
-                    "@",
-                    ""
-                  )}`}
+                  href={`https://instagram.com/${member.instagram.replace("@", "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 block text-lg font-semibold text-red-400 hover:text-red-300 transition"
@@ -104,6 +105,7 @@ export default function BlacklistPage() {
                     No Longer Affiliated with Street Spec Society
                   </p>
                 </div>
+
               </div>
             </div>
           ))}
