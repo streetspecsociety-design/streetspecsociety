@@ -53,7 +53,7 @@ export default function BlacklistPage() {
             BLACKLIST
           </h1>
 
-          <div className="w-32 h-[3px] bg-red-600 mx-auto my-8 rounded-full"></div>
+          <div className="w-32 h-[3px] bg-red-600 mx-auto my-8 rounded-full" />
 
           <p className="max-w-3xl mx-auto text-gray-400 text-lg leading-8">
             This page identifies individuals who are no longer affiliated with
@@ -92,14 +92,17 @@ export default function BlacklistPage() {
 
                 <div className="flex items-center justify-between">
 
-                  <div className="h-16 w-16 overflow-hidden rounded-full border-2 border-red-600 bg-black p-2">
+                  {/* Larger Logo */}
+                  <div className="h-24 w-24 overflow-hidden rounded-full border-2 border-red-600 bg-black flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,.35)]">
+
                     <Image
                       src="/logo.png"
                       alt="Street Spec Society"
-                      width={64}
-                      height={64}
-                      className="object-contain"
+                      width={90}
+                      height={90}
+                      className="scale-125"
                     />
+
                   </div>
 
                   <span className="rounded-full bg-red-600 px-4 py-2 text-xs font-bold uppercase tracking-widest text-white shadow-lg">
@@ -120,7 +123,7 @@ export default function BlacklistPage() {
                   href={`https://instagram.com/${member.instagram.replace("@", "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 block text-lg font-semibold text-red-400 hover:text-red-300"
+                  className="mt-2 block text-lg font-semibold text-red-400 hover:text-red-300 transition"
                 >
                   {member.instagram}
                 </a>
